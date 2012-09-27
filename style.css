@@ -9,3 +9,18 @@ Version:        0.1.0
 */
 
 @import url("../twentyeleven/style.css");
+
+/* Twitter widget styling */
+.widget_twitter .widget-title {
+  float: left;
+}
+.widget_twitter .twitter-avatar {
+  float: right;
+}
+.widget_twitter .twitter-avatar img {
+  border-radius: 4px 4px 4px 4px;
+}
+.widget_twitter > div  > ul {
+  clear: both;
+  margin: 0;
+}
