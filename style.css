@@ -1,0 +1,11 @@
+/*
+Theme Name:     Cvuorinen.net
+Theme URI:      http://cvuorinen.net/
+Description:    Twenty Eleven child theme for cvuorinen.net
+Author:         Carl Vuorinen
+Author URI:     http://cvuorinen.net/about/
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
