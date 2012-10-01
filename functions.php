@@ -20,11 +20,10 @@ function cvuorinen_post_meta() {
     
     echo '<ul class="entry-meta-list">';
     
-    printf( __( '<li><div class="post-time"><a href="%1$s" title="%4$s %2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%5$s %6$s</time></a></div></li>', 'cvuorinen' ),
+    printf( __( '<li><div class="post-time"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s %5$s</time></a></div></li>', 'cvuorinen' ),
 		esc_url( get_permalink() ),
-		esc_attr( get_the_time() ),
+		esc_attr( get_the_date() ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
         esc_html( get_the_date( 'M' ) ),
         esc_html( get_the_date( 'j' ) )
 	);
