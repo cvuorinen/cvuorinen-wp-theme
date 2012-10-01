@@ -21,15 +21,15 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php twentyeleven_posted_on(); ?>
+				<?php cvuorinen_post_meta(); ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 
-			<?php if ( comments_open() && ! post_password_required() ) : ?>
+			<?php /*if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
 			</div>
-			<?php endif; ?>
+			<?php endif;*/ ?>
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -44,10 +44,10 @@
 		<?php endif; ?>
 
 		<footer class="entry-meta">
-			<?php $show_sep = false; ?>
+			<?php /*$show_sep = false; ?>
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
-				/* translators: used between list items, there is a space after the comma */
+				// translators: used between list items, there is a space after the comma 
 				$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
 				if ( $categories_list ):
 			?>
@@ -57,7 +57,7 @@
 			</span>
 			<?php endif; // End if categories ?>
 			<?php
-				/* translators: used between list items, there is a space after the comma */
+				// translators: used between list items, there is a space after the comma 
 				$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
 				if ( $tags_list ):
 				if ( $show_sep ) : ?>
@@ -75,7 +75,7 @@
 			<span class="sep"> | </span>
 			<?php endif; // End if $show_sep ?>
 			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
-			<?php endif; // End if comments_open() ?>
+			<?php endif;*/ // End if comments_open() ?>
 
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->

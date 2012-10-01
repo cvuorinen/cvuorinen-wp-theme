@@ -10,6 +10,140 @@ Version:        0.1.0
 
 @import url("../twentyeleven/style.css");
 
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700");
+
+
+/* Typography etc. */
+#site-title {
+    letter-spacing: 0.1em;
+}
+#site-description {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
+}
+
+.entry-title {
+    font-family: "Oswald",Impact,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.widget-title,
+#reply-title {
+    color: #373737;
+    font-family: "Oswald",Impact,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 2.6em;
+    text-transform: none;
+}
+#reply-title {
+    font-size: 24px;
+}
+
+a,
+.widget a,
+.entry-meta a {
+    text-decoration: underline;
+    font-weight: normal;
+}
+a:hover,
+.widget a:hover {
+    text-decoration: none;
+}
+
+.widget ul {
+    margin-left: 20px;
+}
+
+
+
+/* Post meta info */
+article {
+    clear: both;
+}
+
+article header.entry-header .entry-meta ul.entry-meta-list {
+    margin: 0;
+    list-style-type: none;
+}
+article header.entry-header .entry-meta ul.entry-meta-list li {
+    float: left;
+    margin: 3px 5px;
+}
+ul.entry-meta-list .post-time {
+    display: inline;
+    padding: 1px 6px 2px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+ul.entry-meta-list .post-time a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (min-width: 800px) {
+    #content {
+        margin-left: 17.2%;
+        margin: 0 30% 0 17.6%;
+        width: 52.4%;
+    }
+    article header.entry-header {
+        position: relative;
+    }
+    article header.entry-header .entry-meta {
+        position: absolute;
+        top: 10px;
+        left: -130px;
+        width: 120px;
+        padding-right: 0;
+        text-align: right;
+    }
+    article header.entry-header .entry-meta ul.entry-meta-list li {
+        clear: both;
+        float: none;
+        margin: 3px 0;
+        padding-right: 5px;
+    }
+    ul.entry-meta-list .post-time {
+        float: right;
+        width: 34px;
+        height: 34px;
+        padding: 8px;
+        border-radius: 25px 25px 25px 25px;
+        font-size: 17px;
+        font-family: Georgia,"Times New Roman",Times,serif;
+        font-weight: normal;
+        font-style: italic;
+    }
+    ul.entry-meta-list .post-time a {
+        font-weight: normal;
+    }
+}
+
+
+/* Footer colors */
+footer {
+    background-color: #464646;
+    color: #eee;
+}
+footer .widget-title {
+    color: #eee;
+}
+footer a {
+    color: #999;
+}
+footer #s {
+    background-color: #f9f9f9;
+}
+
+
 /* Search form in nav bar */
 #branding .nav-search {
     float: right;
@@ -29,6 +163,20 @@ Version:        0.1.0
         display: none;
     }
 }
+
+
+/* Comment form customizations */
+#respond {
+    padding-bottom: 40px;
+}
+#respond .form-submit {
+    margin: 0;
+}
+#respond input#submit {
+    left: 0;
+    margin: 0;
+}
+
 
 /* Twitter widget styling */
 .widget_twitter .widget-title {
