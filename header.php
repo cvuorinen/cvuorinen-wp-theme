@@ -65,6 +65,7 @@
 	 */
 	wp_head();
 ?>
+<!-- Icons by Font Awesome - http://fortawesome.github.com/Font-Awesome -->
 </head>
 
 <body <?php body_class(); ?>>
