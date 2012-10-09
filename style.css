@@ -104,6 +104,37 @@ a:hover,
     }
 }
 
+/* Header links */
+#header-links {
+    float: right;
+    margin-top: -45px;
+    margin-right: 8%;
+}
+
+#header-links a {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 9px;
+    padding: 0 3px 6px 3px;
+    border-radius: 31px 31px 31px 31px;
+    background-color: #666;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 0 1px #eee;
+}
+#header-links a.rss:hover {
+    background-color: #d65600;
+}
+#header-links a.twitter:hover {
+    background-color: #0097D1;
+}
+#header-links a.linkedin:hover {
+    background-color: #0074b1;
+}
 
 
 /* Post meta info */

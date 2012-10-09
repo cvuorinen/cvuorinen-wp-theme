@@ -41,13 +41,13 @@ function cvuorinen_post_meta() {
     }
     
     if ( '' != $tag_list ) {
-        printf( __( '<li class="tag-links">Tags: %1$s</li>', 'cvuorinen' ),
+        printf( __( '<li class="tag-links"><i class="icon-tags"></i> Tags: %1$s</li>', 'cvuorinen' ),
             $tag_list
         );
     }
     
     if ( comments_open() ) {
-        echo '<li class="comment-link">';
+        echo '<li class="comment-link"><i class="icon-comment-alt"></i> ';
         comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentyeleven' ) . '</span>',
             __( '<b>1</b> Comment', 'twentyeleven' ),
             __( '<b>%</b> Comments', 'twentyeleven' )
@@ -57,3 +57,17 @@ function cvuorinen_post_meta() {
     
     echo '</ul><div style="clear:both;"></div>';
 }
+
+/**
+ * Font awesome
+ */
+function cvuorinen_fontawesome_styles()  
+{
+    wp_register_style( 'fontawesome-style', get_stylesheet_directory_uri() . '/fontawesome/css/font-awesome.css', array(), '2.0', 'all' );
+    wp_enqueue_style( 'fontawesome-style' );
+    
+    wp_register_style( 'fontawesome-ie-style', get_stylesheet_directory_uri() . '/fontawesome/css/font-awesome-ie7.css', array(), '2.0', 'all' );
+    $GLOBALS['wp_styles']->add_data( 'fontawesome-ie-style', 'conditional', 'IE 7' );
+    wp_enqueue_style( 'fontawesome-ie-style' );
+}  
+add_action( 'wp_enqueue_scripts', 'cvuorinen_fontawesome_styles' ); 
