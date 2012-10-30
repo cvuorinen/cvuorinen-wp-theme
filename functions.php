@@ -16,11 +16,11 @@ function cvuorinen_post_meta() {
     $categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
 
     /* translators: used between list items, there is a space after the comma */
-    $tag_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
+    $tag_list = get_the_tag_list( '<span class="tag-link"><i class="icon icon-tag"></i>', __( ',</span> <span class="tag-link"><i class="icon icon-tag"></i>', 'twentyeleven' ), '</span>' );
     
     echo '<ul class="entry-meta-list">';
     
-    printf( __( '<li><div class="post-time"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s %5$s</time></a></div><div style="clear:both;"></div></li>', 'cvuorinen' ),
+    printf( __( '<li><div class="post-time"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate><span class="entry-date-month">%4$s</span> <span class="entry-date-day">%5$s</span></time></a></div><div style="clear:both;"></div></li>', 'cvuorinen' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_date() ),
 		esc_attr( get_the_date( 'c' ) ),
@@ -35,20 +35,20 @@ function cvuorinen_post_meta() {
 //	);
     
     if ( '' != $categories_list ) {
-        printf( __( '<li class="cat-links">Categories: %1$s</li>', 'cvuorinen' ),
+        printf( __( '<li class="cat-links"><i class="icon icon-bookmark"></i> Categories: %1$s</li>', 'cvuorinen' ),
             $categories_list
         );
     }
     
     if ( '' != $tag_list ) {
-        printf( __( '<li class="tag-links"><i class="icon-tags"></i> Tags: %1$s</li>', 'cvuorinen' ),
+        printf( __( '<li class="tag-links"><i class="icon icon-tags"></i> Tags: %1$s</li>', 'cvuorinen' ),
             $tag_list
         );
     }
     
     if ( comments_open() ) {
-        echo '<li class="comment-link"><i class="icon-comment-alt"></i> ';
-        comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentyeleven' ) . '</span>',
+        echo '<li class="comment-link"><i class="icon icon-comment"></i> ';
+        comments_popup_link( '<span class="leave-reply">' . __( 'Comment', 'twentyeleven' ) . '</span>',
             __( '<b>1</b> Comment', 'twentyeleven' ),
             __( '<b>%</b> Comments', 'twentyeleven' )
         );

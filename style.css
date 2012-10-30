@@ -104,7 +104,7 @@ a:hover,
     }
 }
 
-/* Header links */
+/* Header & footer links */
 #header-links {
     float: right;
     margin-top: -45px;
@@ -126,13 +126,34 @@ a:hover,
     text-align: center;
     text-shadow: 0 0 1px #eee;
 }
-#header-links a.rss:hover {
+#footer-links a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+#footer-links a i {
+    width: 25px;
+    height: 25px;
+    margin: 0 9px;
+    padding: 0 3px 6px 3px;
+    border-radius: 31px 31px 31px 31px;
+    background-color: #666;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 0 1px #eee;
+}
+#header-links a.rss:hover,
+#footer-links a.rss:hover i {
     background-color: #d65600;
 }
-#header-links a.twitter:hover {
+#header-links a.twitter:hover,
+#footer-links a.twitter:hover i {
     background-color: #0097D1;
 }
-#header-links a.linkedin:hover {
+#header-links a.linkedin:hover,
+#footer-links a.linkedin:hover i {
     background-color: #0074b1;
 }
 
@@ -158,11 +179,15 @@ ul.entry-meta-list .post-time {
     color: #fff;
     font-weight: bold;
     text-align: center;
+    white-space: nowrap;
 }
 ul.entry-meta-list .post-time a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+}
+.entry-meta i.icon {
+    color: #999;
 }
 @media (min-width: 800px) {
     #content {
@@ -176,8 +201,8 @@ ul.entry-meta-list .post-time a {
     article header.entry-header .entry-meta {
         position: absolute;
         top: 10px;
-        left: -130px;
-        width: 120px;
+        left: -160px;
+        width: 150px;
         padding-right: 0;
         text-align: right;
     }
@@ -189,16 +214,23 @@ ul.entry-meta-list .post-time a {
     }
     ul.entry-meta-list .post-time {
         float: right;
-        width: 34px;
-        height: 34px;
-        padding: 8px;
+        width: 38px;
+        height: 38px;
+        padding: 6px;
         border-radius: 25px 25px 25px 25px;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: normal;
         font-style: italic;
+        white-space: normal;
     }
     ul.entry-meta-list .post-time a {
         font-weight: normal;
+    }
+    ul.entry-meta-list .post-time .entry-date-month {
+        font-size: 15px;
+    }
+    ul.entry-meta-list .tag-links .tag-link {
+        display: block;
     }
 }
 
