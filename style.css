@@ -55,6 +55,29 @@ body {
     font-weight: normal;
 }
 
+.entry-content h1 {
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+.entry-content h2 {
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.entry-content h3 {
+    font-size: 1.0em;
+}
+
+.page-title {
+    color: #666666;
+    font-size: 1.0em;
+}
+
 .widget-title,
 #reply-title {
     color: #373737;
@@ -150,11 +173,11 @@ a:hover,
 }
 #header-links a.twitter:hover,
 #footer-links a.twitter:hover i {
-    background-color: #0097D1;
+    background-color: #00aced;
 }
 #header-links a.linkedin:hover,
 #footer-links a.linkedin:hover i {
-    background-color: #0074b1;
+    background-color: #1f78ad;
 }
 
 
@@ -209,7 +232,7 @@ ul.entry-meta-list .post-time a {
     article header.entry-header .entry-meta ul.entry-meta-list li {
         clear: both;
         float: none;
-        margin: 10px 0;
+        margin: 15px 0;
         padding-right: 5px;
     }
     ul.entry-meta-list .post-time {
@@ -217,6 +240,7 @@ ul.entry-meta-list .post-time a {
         width: 38px;
         height: 38px;
         padding: 6px;
+        margin-bottom: 10px;
         border-radius: 25px 25px 25px 25px;
         font-size: 18px;
         font-weight: normal;
@@ -236,17 +260,17 @@ ul.entry-meta-list .post-time a {
 
 
 /* Footer colors */
-footer {
+div#page > footer {
     background-color: #464646;
     color: #eee;
 }
-footer .widget-title {
+div#page > footer .widget-title {
     color: #eee;
 }
-footer a {
+div#page > footer a {
     color: #999;
 }
-footer #s {
+div#page > footer #s {
     background-color: #f9f9f9;
 }
 

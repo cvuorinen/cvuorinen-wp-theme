@@ -16,7 +16,7 @@ function cvuorinen_post_meta() {
     $categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
 
     /* translators: used between list items, there is a space after the comma */
-    $tag_list = get_the_tag_list( '<span class="tag-link"><i class="icon icon-tag"></i>', __( ',</span> <span class="tag-link"><i class="icon icon-tag"></i>', 'twentyeleven' ), '</span>' );
+    $tag_list = get_the_tag_list( '<span class="tag-link">', __( ',</span> <span class="tag-link">', 'twentyeleven' ), '</span>' );
     
     echo '<ul class="entry-meta-list">';
     
