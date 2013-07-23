@@ -252,6 +252,7 @@ ul.entry-meta-list .post-time a {
     }
     ul.entry-meta-list .post-time .entry-date-month {
         font-size: 15px;
+        display: block;
     }
     ul.entry-meta-list .tag-links .tag-link {
         display: block;
